@@ -1,0 +1,28 @@
+.main-wrraper {
+    padding: 10px;
+    overflow: hidden;
+}
+
+@import 'cart';
+@import 'interanetCart';
+
+@media (min-width: 768px) {
+    .main-content {
+        float: left;
+        border-right: 1px solid #bbbbbb;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        width: 72%;
+    }
+    .sidebar {
+        float: left;
+        padding-left: 30px;
+        width: 28%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1680px) {
+    .sidebar {
+        max-width: 382px;
+    }
+}

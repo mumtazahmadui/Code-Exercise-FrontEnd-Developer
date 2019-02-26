@@ -1,0 +1,41 @@
+.intranet-heading {
+    font-size: 0.875rem;
+    padding: 5px 0 10px;
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 14px;
+}
+
+.intranet-list {
+    padding: 0 0 17px;
+    display: flex;
+
+    .interanet-list__icon {
+        height: 40px;
+        overflow: hidden;
+        flex: 0 0 45px;
+    }
+    
+    .interanet-list__details {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        padding-left: 12px;
+    }
+    .intranet-list__title {
+        padding: 3px 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .intranet-list__descript {
+        font-size: 0.825rem;
+    }
+}
+.more-link {
+    a {
+        text-decoration: none;
+        font-size: 0.875rem;
+        display: inline-block;
+        margin: 14px 0;   
+    }
+}

@@ -1,0 +1,13 @@
+.text-green {
+    color: rgb(26, 179, 148);
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
