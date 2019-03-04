@@ -6,7 +6,8 @@ var gulp = require('gulp'),
   rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     maps = require('gulp-sourcemaps'),
-     del = require('del');
+     del = require('del'),
+     minifyCss = require('gulp-minify-css');
 
 gulp.task("concatScripts", function(){
     return gulp.src([
@@ -28,8 +29,16 @@ gulp.task("minifyScripts", ["concatScripts"], function (){
 gulp.task("compileSass", function(){
     return gulp.src("scss/application.scss")
         .pipe(maps.init())
-        .pipe(sass())
+        //.pipe(sass())
+        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(maps.write('./'))
+        .pipe(gulp.dest('css'));
+})
+
+gulp.task("styles", function(){
+    return gulp.src(["css/application.css"])
+        .pipe(concat('style.css'))
+        .pipe(minifyCss())
         .pipe(gulp.dest('css'));
 })
 
