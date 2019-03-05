@@ -12,4 +12,4 @@ In the project root orders, please run the following command：
 
 If you need to monitor your modified files, you can run：
 
-	gulp watch
+	gulp watchSass
