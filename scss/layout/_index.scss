@@ -1,7 +1,9 @@
 // ==========================================================================
-// Global Imports
+// Layout Imports
 // ==========================================================================
 
-@import 'base/index';
-@import 'layout/index';
-@import 'components/index';
+@import 'header';
+@import 'footer';
+@import 'containers';
+@import 'columns';
+@import 'extends';
